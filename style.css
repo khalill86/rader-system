@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+/* container ديال الرادار */
+.radar-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: radial-gradient(circle at center, rgba(0,255,0,0.05), black 70%);
+}
+
+/* canvas يشد الشاشة كاملة */
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  filter: drop-shadow(0 0 15px lime) brightness(1.4);
+}
+.hud {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: lime;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 10px lime;
+  z-index: 10;
+}

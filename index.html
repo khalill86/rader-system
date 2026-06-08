@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Military Radar</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+
+<body>
+
+  <div class="radar-container">
+    <canvas id="radarCanvas"></canvas>
+  </div>
+  <div class="hud">
+  <p>Angle: <span id="hudAngle">0</span>°</p>
+  <p>Distance: <span id="hudDistance">0</span></p>
+  <p>Time: <span id="hudTime">--:--:--</span></p>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
